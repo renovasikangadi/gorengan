@@ -1,157 +1,482 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#171717">
-  <meta name="description" content="Kang Adi melayani jasa renovasi rumah, bangun rumah baru, kanopi, dapur, plafon, lantai, dan perbaikan rumah area Jabodetabek. Konsultasi langsung melalui WhatsApp.">
-  <title>Kang Adi | Jasa Renovasi & Bangun Rumah</title>
-  <style>
-    :root{--gold:#d6ad55;--dark:#171717;--ink:#222;--muted:#686868;--cream:#f7f5ef;--white:#fff}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
-    a{color:inherit}
-    .topbar{background:var(--dark);color:#fff;padding:12px 18px}
-    .nav{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:1.1rem}
-    .brand img{width:48px;height:48px;object-fit:contain;border-radius:50%;background:#fff}
-    .brand span{color:var(--gold)}
-    .nav-cta{background:var(--gold);color:#171717;text-decoration:none;font-weight:800;padding:10px 15px;border-radius:8px;white-space:nowrap}
-    .hero{background:linear-gradient(120deg,rgba(15,15,15,.94),rgba(15,15,15,.77)),url('/rumah-modern.jpg') center/cover;color:#fff;padding:76px 20px 82px}
-    .hero-inner{max-width:1120px;margin:auto}
-    .eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.82rem}
-    h1{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1.12;max-width:780px;margin:14px 0}
-    .hero p{max-width:650px;color:#eee;font-size:1.08rem}
-    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
-    .btn{display:inline-block;padding:13px 18px;border-radius:8px;text-decoration:none;font-weight:800}
-    .btn-gold{background:var(--gold);color:#171717}
-    .btn-outline{border:1px solid #ddd;color:#fff}
-    section{padding:58px 20px}
-    .container{max-width:1120px;margin:auto}
-    .section-head{text-align:center;max-width:720px;margin:0 auto 30px}
-    .section-head h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 8px}
-    .section-head p{color:var(--muted);margin:0}
-    .services{background:var(--cream)}
-    .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .service{background:#fff;padding:22px;border-radius:12px;border:1px solid #e9e5dc}
-    .service .icon{font-size:1.65rem}
-    .service h3{margin:8px 0 5px;font-size:1.08rem}
-    .service p{margin:0;color:var(--muted);font-size:.95rem}
-    .gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .gallery-card{margin:0;background:#f2f2f2;border-radius:12px;overflow:hidden;border:1px solid #e8e8e8}
-    .gallery-card img{display:block;width:100%;height:245px;object-fit:cover;background:#e8e8e8}
-    .gallery-card figcaption{padding:11px 13px;font-weight:700;font-size:.95rem}
-    .note{font-size:.85rem;color:var(--muted);text-align:center;margin-top:18px}
-    .why{background:var(--dark);color:#fff}
-    .why .section-head p{color:#ddd}
-    .why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .why-card{padding:22px;border:1px solid #454545;border-radius:12px}
-    .why-card h3{color:var(--gold);margin:0 0 6px}
-    .why-card p{margin:0;color:#eee}
-    .contact{background:var(--cream);text-align:center}
-    .contact-panel{background:#fff;border:1px solid #e8e1d1;border-radius:16px;padding:30px 20px;max-width:780px;margin:auto}
-    .contact-panel h2{font-size:clamp(1.7rem,3vw,2.3rem);margin:0 0 8px}
-    .contact-panel p{color:var(--muted)}
-    .socials{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:20px}
-    .socials a{font-weight:700;color:#333}
-    footer{background:#111;color:#ccc;text-align:center;padding:22px 16px;font-size:.9rem}
-    .wa-float{position:fixed;right:16px;bottom:16px;z-index:10;background:#168b49;color:white;text-decoration:none;border-radius:999px;padding:13px 17px;font-weight:800;box-shadow:0 5px 20px #0003}
-    @media(max-width:760px){.service-grid,.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-card img{height:190px}.hero{padding:58px 18px 65px}}
-    @media(max-width:480px){.service-grid,.why-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;gap:9px}.gallery-card img{height:155px}.gallery-card figcaption{font-size:.82rem;padding:9px}.brand img{width:40px;height:40px}.nav-cta{font-size:.85rem;padding:9px 11px}.topbar{padding:10px 12px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171717">
+<meta name="description" content="Jasa renovasi rumah, bangun rumah baru, kanopi baja ringan dan perbaikan rumah Kang Adi area Bogor dan Jabodetabek.">
+<title>Galeri Kang Adi | Renovasi & Bangun Rumah</title>
+
+<style>
+:root {
+  --gold: #d8ad58;
+  --dark: #171717;
+  --muted: #777;
+  --light: #f7f6f2;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: #222;
+}
+button, a { font: inherit; }
+button { cursor: pointer; }
+header {
+  background: var(--dark);
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.brand { font-size: 21px; font-weight: 800; }
+.brand span { color: var(--gold); }
+.header-link {
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+.hero {
+  background: linear-gradient(110deg, #171717ee, #17171788),
+  url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
+  center/cover;
+  color: white;
+  text-align: center;
+  padding: 78px 20px 72px;
+}
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.hero h1 {
+  font-size: clamp(32px, 6vw, 54px);
+  margin: 14px 0;
+  line-height: 1.12;
+}
+.hero p {
+  color: #eee;
+  max-width: 540px;
+  line-height: 1.7;
+  margin: 0 auto 25px;
+}
+.cta {
+  display: inline-block;
+  padding: 14px 22px;
+  background: var(--gold);
+  color: #171717;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+main { max-width: 1120px; margin: auto; padding: 45px 18px 65px; }
+.section-heading { text-align: center; margin-bottom: 28px; }
+.section-heading h2 { font-size: 29px; margin: 0 0 10px; }
+.section-heading p { color: var(--muted); line-height: 1.6; margin: 0; }
+.albums {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.album {
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 12px;
+  background: white;
+  text-align: left;
+  box-shadow: 0 5px 22px #0000000c;
+  transition: transform .2s, box-shadow .2s;
+}
+.album:hover { transform: translateY(-4px); box-shadow: 0 10px 28px #00000018; }
+.album img {
+  display: block;
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  background: #ddd;
+}
+.album-info { padding: 16px; }
+.album-info h3 { margin: 0 0 7px; font-size: 18px; }
+.album-info p { margin: 0; color: var(--muted); font-size: 13px; }
+.album-info .open-album { display: block; color: #987128; margin-top: 13px; font-size: 13px; font-weight: bold; }
+#albumView { display: none; }
+.back {
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 7px;
+  padding: 11px 15px;
+  margin-bottom: 22px;
+}
+.album-title { font-size: 30px; margin: 0 0 8px; }
+.album-desc { color: var(--muted); margin-bottom: 25px; line-height: 1.6; }
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.photo {
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ddd;
+  border-radius: 9px;
+}
+.photo img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform .25s;
+}
+.photo:hover img { transform: scale(1.04); }
+.note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+.contact {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 42px 20px;
+}
+.contact h2 { margin: 0 0 12px; }
+.contact p { color: #ddd; line-height: 1.6; }
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #000e;
+  z-index: 20;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.lightbox.show { display: flex; }
+.lightbox-inner { width: 100%; max-width: 950px; text-align: center; }
+.lightbox img {
+  max-width: 100%;
+  max-height: 76vh;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.lightbox-caption { color: white; margin-top: 12px; }
+.lightbox-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+.lightbox-controls button, .close-lightbox {
+  border: 1px solid #ffffff55;
+  background: #292929;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 7px;
+}
+.close-lightbox { position: absolute; right: 18px; top: 18px; font-size: 20px; }
+@media(max-width: 720px) {
+  .albums { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .album img { height: 150px; }
+  .album-info { padding: 12px; }
+  .album-info h3 { font-size: 15px; }
+  .photos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .photo img { height: 165px; }
+  main { padding: 32px 13px 45px; }
+  .hero { padding: 60px 17px; }
+}
+@media(max-width: 360px) {
+  .albums { grid-template-columns: 1fr; }
+  .album img { height: 200px; }
+}
+</style>
 </head>
+
 <body>
-  <header class="topbar">
-    <nav class="nav" aria-label="Navigasi utama">
-      <a class="brand" href="#beranda">
-        <img src="/logo-kang-adi.webp" alt="Logo Kang Adi" onerror="this.style.display='none'">
-        <div>KANG <span>ADI</span></div>
-      </a>
-      <a class="nav-cta" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20ingin%20konsultasi%20renovasi%20rumah" target="_blank" rel="noopener">Chat WhatsApp</a>
-    </nav>
-  </header>
+<header>
+  <div class="brand">KANG <span>ADI</span></div>
+  <a class="header-link" href="https://wa.me/62895404466622">HUBUNGI KAMI ↗</a>
+</header>
 
-  <main>
-    <section class="hero" id="beranda">
-      <div class="hero-inner">
-        <div class="eyebrow">Jasa Renovasi & Bangun Rumah • Jabodetabek</div>
-        <h1>Rumah Nyaman Dimulai dari Pengerjaan yang Tepat.</h1>
-        <p>Kang Adi melayani renovasi rumah, bangun baru, kanopi, dapur, plafon, lantai, hingga perbaikan rumah. Konsultasikan kebutuhan dan anggaran Anda secara langsung.</p>
-        <div class="actions">
-          <a class="btn btn-gold" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20ingin%20konsultasi%20pekerjaan%20rumah" target="_blank" rel="noopener">Konsultasi Gratis via WA</a>
-          <a class="btn btn-outline" href="#galeri">Lihat Hasil Pekerjaan</a>
-        </div>
-      </div>
-    </section>
+<section class="hero">
+  <div class="eyebrow">Renovasi • Bangun Baru • Perbaikan</div>
+  <h1>Galeri Hasil Pekerjaan<br>Kang Adi</h1>
+  <p>Lihat inspirasi renovasi rumah, kanopi, dapur, dan berbagai pekerjaan bangunan untuk rumah Anda.</p>
+  <a class="cta" href="#galeri">JELAJAHI GALERI ↓</a>
+</section>
 
-    <section class="services" id="layanan">
-      <div class="container">
-        <div class="section-head">
-          <h2>Layanan Kang Adi</h2>
-          <p>Pekerjaan rumah dari perbaikan kecil hingga renovasi menyeluruh.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service"><div class="icon">🏠</div><h3>Renovasi & Bangun Baru</h3><p>Perbaikan rumah, renovasi sebagian atau full, serta pembangunan rumah baru.</p></article>
-          <article class="service"><div class="icon">🧱</div><h3>Dinding, Lantai & Plafon</h3><p>Pemasangan keramik/granit, pekerjaan dinding, plafon, dan pengecatan ulang.</p></article>
-          <article class="service"><div class="icon">🏗️</div><h3>Kanopi & Atap</h3><p>Pembuatan kanopi baja ringan, spandek, perbaikan atap, dan pekerjaan dak.</p></article>
-          <article class="service"><div class="icon">🍽️</div><h3>Dapur & Meja Dapur</h3><p>Pembuatan meja dapur beton, finishing keramik atau granit, sesuai kebutuhan.</p></article>
-          <article class="service"><div class="icon">🛠️</div><h3>Perbaikan Rumah Kecil</h3><p>Membantu menangani kerusakan dan pekerjaan perawatan rumah sehari-hari.</p></article>
-          <article class="service"><div class="icon">📋</div><h3>Konsultasi Pekerjaan</h3><p>Diskusikan kebutuhan, perkiraan pekerjaan, dan anggaran sebelum mulai.</p></article>
-        </div>
+<main>
+  <section id="galeri">
+    <div id="albumListView">
+      <div class="section-heading">
+        <h2>Pilih Album Foto</h2>
+        <p>Tekan salah satu kategori untuk melihat koleksi fotonya.</p>
       </div>
-    </section>
+      <div class="albums" id="albums"></div>
+      <p class="note">Catatan: foto yang ditampilkan saat ini adalah foto contoh untuk inspirasi, bukan klaim hasil pekerjaan Kang Adi.</p>
+    </div>
 
-    <section id="galeri">
-      <div class="container">
-        <div class="section-head">
-          <h2>Galeri Hasil Pekerjaan</h2>
-          <p>Beberapa contoh pekerjaan renovasi dan pembangunan.</p>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-card"><img src="/kanopi-selesai.jpg" alt="Hasil pekerjaan kanopi selesai" loading="eager"><figcaption>Kanopi Selesai</figcaption></figure>
-          <figure class="gallery-card"><img src="/kanopi-proses.jpg" alt="Proses pengerjaan kanopi" loading="eager"><figcaption>Proses Pengerjaan Kanopi</figcaption></figure>
-          <figure class="gallery-card"><img src="/rumah-loster.jpg" alt="Pekerjaan rumah dengan loster" loading="eager"><figcaption>Rumah dengan Loster</figcaption></figure>
-          <figure class="gallery-card"><img src="/teras-bata.jpg" alt="Pekerjaan teras rumah" loading="eager"><figcaption>Teras Rumah</figcaption></figure>
-          <figure class="gallery-card"><img src="/kamar-mandi.jpg" alt="Pekerjaan kamar mandi" loading="eager"><figcaption>Kamar Mandi</figcaption></figure>
-          <figure class="gallery-card"><img src="/rumah-modern.jpg" alt="Rumah modern" loading="eager"><figcaption>Rumah Modern</figcaption></figure>
-          <figure class="gallery-card"><img src="/dak-beton.jpg" alt="Pekerjaan dak beton" loading="eager"><figcaption>Dak Beton</figcaption></figure>
-          <figure class="gallery-card"><img src="/kanopi-kaca.jpg" alt="Pekerjaan kanopi kaca" loading="eager"><figcaption>Kanopi Kaca</figcaption></figure>
-          <figure class="gallery-card"><img src="/interior-rumah.jpg" alt="Interior rumah" loading="eager"><figcaption>Interior Rumah</figcaption></figure>
-        </div>
-        <p class="note">Jika foto tidak muncul, pastikan nama file dan huruf besar/kecil sama persis dengan file di GitHub.</p>
-      </div>
+    <section id="albumView">
+      <button class="back" id="backButton">← Kembali ke semua album</button>
+      <h2 class="album-title" id="albumTitle"></h2>
+      <div class="album-desc" id="albumDescription"></div>
+      <div class="photos" id="photos"></div>
+      <p class="note">Foto contoh untuk inspirasi desain. Tekan foto untuk melihat lebih besar.</p>
     </section>
+  </section>
+</main>
 
-    <section class="why">
-      <div class="container">
-        <div class="section-head">
-          <h2>Kenapa Konsultasi dengan Kang Adi?</h2>
-          <p>Komunikasi langsung agar kebutuhan pekerjaan lebih jelas sejak awal.</p>
-        </div>
-        <div class="why-grid">
-          <article class="why-card"><h3>Diskusi Langsung</h3><p>Jelaskan kebutuhan rumah dan tanyakan pilihan pekerjaan yang sesuai.</p></article>
-          <article class="why-card"><h3>Menyesuaikan Kebutuhan</h3><p>Pekerjaan dibicarakan berdasarkan kondisi rumah dan anggaran yang tersedia.</p></article>
-          <article class="why-card"><h3>Area Jabodetabek</h3><p>Hubungi kami untuk membahas lokasi dan jadwal survei pekerjaan.</p></article>
-        </div>
-      </div>
-    </section>
+<section class="contact">
+  <h2>Mau Renovasi atau Bangun Rumah?</h2>
+  <p>Konsultasikan kebutuhan rumah Anda bersama Kang Adi.<br>Melayani Bogor dan area Jabodetabek.</p>
+  <a class="cta" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20ingin%20konsultasi%20renovasi%20rumah.">KONSULTASI VIA WHATSAPP</a>
+</section>
 
-    <section class="contact" id="kontak">
-      <div class="container">
-        <div class="contact-panel">
-          <h2>Ada Rencana Renovasi Rumah?</h2>
-          <p>Ceritakan pekerjaan yang dibutuhkan. Klik WhatsApp untuk mulai konsultasi dengan Kang Adi.</p>
-          <a class="btn btn-gold" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi%2C%20saya%20ingin%20konsultasi%20renovasi%20rumah" target="_blank" rel="noopener">WhatsApp 0895-4044-66622</a>
-          <div class="socials">
-            <a href="https://www.instagram.com/renopasi_rumah_kang_adi/" target="_blank" rel="noopener">Instagram: @renopasi_rumah_kang_adi</a>
-            <a href="https://www.tiktok.com/@adirenovasi" target="_blank" rel="noopener">TikTok: @adirenovasi</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>© <span id="year">2026</span> Kang Adi — Jasa Renovasi & Bangun Rumah. Area layanan Jabodetabek.</footer>
-  <a class="wa-float" href="https://wa.me/62895404466622?text=Halo%20Kang%20Adi" target="_blank" rel="noopener" aria-label="Chat WhatsApp Kang Adi">WhatsApp</a>
+<footer>© <span id="year"></span> Kang Adi — Jasa Renovasi & Bangun Rumah</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ukuran besar">
+  <button class="close-lightbox" id="closeLightbox" aria-label="Tutup foto">✕</button>
+  <div class="lightbox-inner">
+    <img id="largePhoto" src="" alt="">
+    <div class="lightbox-caption" id="photoCaption"></div>
+    <div class="lightbox-controls">
+      <button id="prevPhoto">← Sebelumnya</button>
+      <button id="nextPhoto">Berikutnya →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const photo = (id, title) => ({
+  title,
+  url: `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1100&q=85`
+});
+
+const albums = [
+  {
+    name: "Kanopi",
+    description: "Inspirasi kanopi rumah, carport, baja ringan, dan penutup atap.",
+    cover: photo("photo-1600566753086-00f18fb6b3ea", "Kanopi rumah"),
+    photos: [
+      photo("photo-1600566753086-00f18fb6b3ea", "Inspirasi kanopi rumah"),
+      photo("photo-1600607687939-ce8a6c25118c", "Tampilan rumah modern"),
+      photo("photo-1600585154340-be6161a56a0c", "Carport dan fasad rumah"),
+      photo("photo-1600566753190-17f0baa2a6c3", "Inspirasi eksterior"),
+      photo("photo-1600607687920-4e2a09cf159d", "Desain rumah modern"),
+      photo("photo-1600047509807-ba8f99d2cdde", "Inspirasi rumah")
+    ]
+  },
+  {
+    name: "Renovasi Rumah",
+    description: "Inspirasi tampilan depan rumah, fasad, dan renovasi hunian.",
+    cover: photo("photo-1600607687939-ce8a6c25118c", "Renovasi rumah"),
+    photos: [
+      photo("photo-1600607687939-ce8a6c25118c", "Fasad rumah modern"),
+      photo("photo-1600585154340-be6161a56a0c", "Inspirasi rumah"),
+      photo("photo-1600047509807-ba8f99d2cdde", "Rumah minimalis"),
+      photo("photo-1600566753190-17f0baa2a6c3", "Eksterior hunian"),
+      photo("photo-1600607687920-4e2a09cf159d", "Tampilan rumah"),
+      photo("photo-1600566753086-00f18fb6b3ea", "Inspirasi renovasi")
+    ]
+  },
+  {
+    name: "Dapur & Granit",
+    description: "Inspirasi meja dapur, countertop, kabinet, dan finishing granit.",
+    cover: photo("photo-1600607687920-4e2a09cf159d", "Dapur modern"),
+    photos: [
+      photo("photo-1600607687920-4e2a09cf159d", "Inspirasi interior"),
+      photo("photo-1600566753086-00f18fb6b3ea", "Desain rumah"),
+      photo("photo-1600607687939-ce8a6c25118c", "Inspirasi dapur"),
+      photo("photo-1600585154340-be6161a56a0c", "Desain hunian"),
+      photo("photo-1600047509807-ba8f99d2cdde", "Interior modern"),
+      photo("photo-1600566753190-17f0baa2a6c3", "Inspirasi renovasi")
+    ]
+  },
+  {
+    name: "Kamar Mandi & Lantai",
+    description: "Inspirasi keramik, lantai, kamar mandi, dan finishing ruangan.",
+    cover: photo("photo-1620626011761-996317b8d101", "Kamar mandi"),
+    photos: [
+      photo("photo-1620626011761-996317b8d101", "Inspirasi kamar mandi"),
+      photo("photo-1600566753086-00f18fb6b3ea", "Inspirasi rumah"),
+      photo("photo-1600607687920-4e2a09cf159d", "Finishing interior"),
+      photo("photo-1600566753190-17f0baa2a6c3", "Desain interior"),
+      photo("photo-1600607687939-ce8a6c25118c", "Inspirasi hunian"),
+      photo("photo-1600585154340-be6161a56a0c", "Desain rumah")
+    ]
+  },
+  {
+    name: "Atap & Plafon",
+    description: "Inspirasi desain atap, plafon, dan tampilan rumah.",
+    cover: photo("photo-1600585154340-be6161a56a0c", "Atap rumah"),
+    photos: [
+      photo("photo-1600585154340-be6161a56a0c", "Inspirasi atap"),
+      photo("photo-1600607687939-ce8a6c25118c", "Tampilan rumah"),
+      photo("photo-1600047509807-ba8f99d2cdde", "Desain hunian"),
+      photo("photo-1600566753086-00f18fb6b3ea", "Inspirasi bangunan"),
+      photo("photo-1600607687920-4e2a09cf159d", "Interior rumah"),
+      photo("photo-1600566753190-17f0baa2a6c3", "Inspirasi plafon")
+    ]
+  },
+  {
+    name: "Interior Rumah",
+    description: "Inspirasi ruang keluarga, ruang TV, dan interior minimalis.",
+    cover: photo("photo-1600607687920-4e2a09cf159d", "Interior rumah"),
+    photos: [
+      photo("photo-1600607687920-4e2a09cf159d", "Ruang interior"),
+      photo("photo-1600566753190-17f0baa2a6c3", "Interior modern"),
+      photo("photo-1600607687939-ce8a6c25118c", "Inspirasi ruang"),
+      photo("photo-1600047509807-ba8f99d2cdde", "Hunian minimalis"),
+      photo("photo-1600585154340-be6161a56a0c", "Desain rumah"),
+      photo("photo-1600566753086-00f18fb6b3ea", "Inspirasi interior")
+    ]
+  }
+];
+
+const albumsElement = document.getElementById("albums");
+const listView = document.getElementById("albumListView");
+const albumView = document.getElementById("albumView");
+const photosElement = document.getElementById("photos");
+const lightbox = document.getElementById("lightbox");
+
+let currentAlbum = null;
+let currentPhotoIndex = 0;
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function makeImage(item, alt) {
+  const img = document.createElement("img");
+  img.src = item.url;
+  img.alt = alt || item.title;
+  img.loading = "lazy";
+  img.onerror = () => {
+    img.alt = "Foto tidak dapat dimuat. Periksa koneksi internet.";
+  };
+  return img;
+}
+
+function showAlbums() {
+  albumsElement.innerHTML = "";
+
+  albums.forEach((album, index) => {
+    const button = document.createElement("button");
+    button.className = "album";
+    button.type = "button";
+    button.setAttribute("aria-label", "Buka album " + album.name);
+
+    const image = makeImage(album.cover, "Contoh " + album.name);
+    const info = document.createElement("div");
+    info.className = "album-info";
+
+    const title = document.createElement("h3");
+    title.textContent = album.name;
+
+    const count = document.createElement("p");
+    count.textContent = album.photos.length + " foto contoh";
+
+    const link = document.createElement("span");
+    link.className = "open-album";
+    link.textContent = "LIHAT ALBUM →";
+
+    info.append(title, count, link);
+    button.append(image, info);
+    button.addEventListener("click", () => openAlbum(index));
+    albumsElement.appendChild(button);
+  });
+}
+
+function openAlbum(index) {
+  currentAlbum = albums[index];
+  listView.style.display = "none";
+  albumView.style.display = "block";
+
+  document.getElementById("albumTitle").textContent = currentAlbum.name;
+  document.getElementById("albumDescription").textContent = currentAlbum.description;
+  photosElement.innerHTML = "";
+
+  currentAlbum.photos.forEach((item, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "photo";
+    button.setAttribute("aria-label", "Perbesar foto " + item.title);
+
+    button.appendChild(makeImage(item, item.title));
+    button.addEventListener("click", () => openLightbox(index));
+    photosElement.appendChild(button);
+  });
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backToAlbums() {
+  closeLightbox();
+  albumView.style.display = "none";
+  listView.style.display = "block";
+  currentAlbum = null;
+  window.scrollTo({ top: document.getElementById("galeri").offsetTop - 15, behavior: "smooth" });
+}
+
+function openLightbox(index) {
+  currentPhotoIndex = index;
+  updateLightbox();
+  lightbox.classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+
+function updateLightbox() {
+  if (!currentAlbum) return;
+  const item = currentAlbum.photos[currentPhotoIndex];
+  document.getElementById("largePhoto").src = item.url;
+  document.getElementById("largePhoto").alt = item.title;
+  document.getElementById("photoCaption").textContent =
+    item.title + " · " + (currentPhotoIndex + 1) + " dari " + currentAlbum.photos.length;
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+function movePhoto(direction) {
+  if (!currentAlbum) return;
+  currentPhotoIndex =
+    (currentPhotoIndex + direction + currentAlbum.photos.length) % currentAlbum.photos.length;
+  updateLightbox();
+}
+
+document.getElementById("backButton").addEventListener("click", backToAlbums);
+document.getElementById("closeLightbox").addEventListener("click", closeLightbox);
+document.getElementById("prevPhoto").addEventListener("click", () => movePhoto(-1));
+document.getElementById("nextPhoto").addEventListener("click", () => movePhoto(1));
+
+lightbox.addEventListener("click", event => {
+  if (event.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", event => {
+  if (!lightbox.classList.contains("show")) return;
+  if (event.key === "Escape") closeLightbox();
+  if (event.key === "ArrowLeft") movePhoto(-1);
+  if (event.key === "ArrowRight") movePhoto(1);
+});
+
+showAlbums();
+</script>
 </body>
 </html>
